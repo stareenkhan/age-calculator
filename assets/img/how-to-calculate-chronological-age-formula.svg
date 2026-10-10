@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="How to calculate chronological age by hand using the year, month, day subtraction formula">
+  <rect width="800" height="500" rx="20" fill="#f8fafc"/>
+  <text x="400" y="56" text-anchor="middle" font-family="Arial" font-size="24" font-weight="800" fill="#0f172a">Chronological Age Formula</text>
+  <text x="400" y="86" text-anchor="middle" font-family="Arial" font-size="16" fill="#64748b">Test Date    Date of Birth</text>
+  <g font-family="Arial">
+    <!-- header row -->
+    <rect x="140" y="120" width="520" height="50" fill="#7c3aed"/>
+    <text x="240" y="152" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">Year</text>
+    <text x="400" y="152" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">Month</text>
+    <text x="560" y="152" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">Day</text>
+    <!-- test date -->
+    <rect x="140" y="170" width="520" height="56" fill="#fff" stroke="#e2e8f0"/>
+    <text x="60" y="206" font-size="15" fill="#64748b">Test</text>
+    <text x="240" y="206" text-anchor="middle" font-size="20" fill="#0f172a">2026</text>
+    <text x="400" y="206" text-anchor="middle" font-size="20" fill="#0f172a">6</text>
+    <text x="560" y="206" text-anchor="middle" font-size="20" fill="#0f172a">3</text>
+    <!-- dob -->
+    <rect x="140" y="226" width="520" height="56" fill="#fff" stroke="#e2e8f0"/>
+    <text x="60" y="262" font-size="15" fill="#64748b">Birth</text>
+    <text x="120" y="262" font-size="22" fill="#dc2626"></text>
+    <text x="240" y="262" text-anchor="middle" font-size="20" fill="#0f172a">2014</text>
+    <text x="400" y="262" text-anchor="middle" font-size="20" fill="#0f172a">11</text>
+    <text x="560" y="262" text-anchor="middle" font-size="20" fill="#0f172a">13</text>
+    <!-- result -->
+    <rect x="140" y="300" width="520" height="60" rx="8" fill="#f5f3ff" stroke="#7c3aed"/>
+    <text x="60" y="338" font-size="15" font-weight="700" fill="#6d28d9">Age</text>
+    <text x="240" y="340" text-anchor="middle" font-size="24" font-weight="800" fill="#6d28d9">11</text>
+    <text x="400" y="340" text-anchor="middle" font-size="24" font-weight="800" fill="#6d28d9">6</text>
+    <text x="560" y="340" text-anchor="middle" font-size="24" font-weight="800" fill="#6d28d9">21</text>
+  </g>
+  <text x="400" y="410" text-anchor="middle" font-family="Arial" font-size="15" fill="#64748b">If days are negative, borrow days from the previous month, then borrow months from the year.</text>
+  <text x="400" y="440" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#4f46e5">Result: 11 years, 6 months, 21 days</text>
+</svg>

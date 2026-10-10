@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corrected Age Calculator for Premature Babies (Adjusted Age)</title>
+<meta name="description" content="Free corrected age calculator for premature babies. Get adjusted chronological age from date of birth, test date, and gestational weeks — with the formula explained.">
+<link rel="canonical" href="https://chronological-age-calculator.example/corrected-age-calculator.html">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Corrected Age Calculator for Premature Babies (Adjusted Age)">
+<meta property="og:description" content="Adjusted chronological age for preterm infants, with the corrected-age formula explained.">
+<meta property="og:image" content="https://chronological-age-calculator.example/assets/img/corrected-age-calculator-premature.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Home","item":"https://chronological-age-calculator.example/"},
+{"@type":"ListItem","position":2,"name":"Corrected Age Calculator","item":"https://chronological-age-calculator.example/corrected-age-calculator.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How do you calculate corrected age?","acceptedAnswer":{"@type":"Answer","text":"Corrected age equals chronological age minus the number of weeks the baby was born early. The weeks early is 40 minus the gestational age at birth. For example, a baby born at 32 weeks is 8 weeks early, so subtract 8 weeks from the chronological age."}},
+{"@type":"Question","name":"Until what age is corrected age used?","acceptedAnswer":{"@type":"Answer","text":"Pediatricians typically use corrected age until about 24 months, after which the difference becomes clinically negligible. Always follow your child's pediatrician's guidance."}}]}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Chronological Age Calculator home"><img src="assets/img/logo-mark.svg" width="30" height="30" alt=""><span>Chrono<b>Age</b></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Calculator</a></li>
+      <li><a href="how-to-calculate-chronological-age.html">How to Calculate</a></li>
+      <li><a href="age-in-months-calculator.html">Age in Months</a></li>
+      <li><a href="chronological-age-calculator-for-testing.html">For Testing</a></li>
+      <li><a href="corrected-age-calculator.html" aria-current="page">Corrected Age</a></li>
+      <li><a href="biological-vs-chronological-age.html">Bio vs Chrono</a></li>
+      <li><a href="how-old-am-i.html">How Old Am I</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+<div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> › Corrected Age Calculator</nav></div>
+
+<section class="hero container">
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow">For parents &amp; clinicians of preterm infants</p>
+      <h1>Corrected Age Calculator</h1>
+      <p class="lead">This free <strong>corrected age calculator</strong> shows a premature baby's adjusted chronological age. Enter the date of birth, today's date, and how many weeks pregnant at birth, and it subtracts the weeks born early.</p>
+      <form class="card calc-card" data-calc novalidate>
+        <div class="field"><label for="dob">Date of birth</label><input type="date" id="dob" data-role="dob" required></div>
+        <div class="field"><label for="ref">Age at this date <span class="hint">(defaults to today)</span></label><input type="date" id="ref" data-role="ref"></div>
+        <div class="field"><label for="gest">Gestational age at birth (weeks) <span class="hint">full term = 40</span></label><input type="number" id="gest" data-role="gestation" min="20" max="42" step="1" placeholder="e.g. 32"></div>
+        <p class="error-msg" data-role="error" role="alert" aria-live="assertive"></p>
+        <div class="btn-row">
+          <button type="submit" class="btn btn-primary" data-label="Calculate">Calculate</button>
+          <button type="button" class="btn btn-ghost" data-role="reset" data-label="Reset">Reset</button>
+          <button type="button" class="btn btn-ghost" data-role="copy" data-label="Copy">Copy</button>
+        </div>
+        <div class="result hidden" data-role="result" aria-live="polite">
+          <p class="result-main" data-out="main">—</p>
+          <div class="result-grid">
+            <div class="stat" data-out="corrected"></div>
+            <div class="stat" data-out="months"></div>
+            <div class="stat" data-out="weeks"></div>
+            <div class="stat" data-out="days"></div>
+          </div>
+        </div>
+        <p class="privacy-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 4v5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V7l7-4z" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg> Calculated privately in your browser.</p>
+      </form>
+    </div>
+    <div><img class="hero-art" src="assets/img/corrected-age-calculator-premature.svg" width="800" height="420" alt="Corrected age calculator for premature babies showing adjusted chronological age formula" loading="eager"></div>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="prose">
+    <div class="callout">
+      <strong>Medical disclaimer:</strong> This corrected age calculator is for educational use only and is not a substitute for professional medical advice. Always follow guidance from your pediatrician or neonatal team. Reviewed against publicly available AAP and CDC guidance.
+    </div>
+
+    <div class="takeaways">
+      <h2 class="mt-0">Key takeaways</h2>
+      <ul>
+        <li><strong>Corrected age = chronological age ? (40 ? gestational weeks)</strong>.</li>
+        <li>It adjusts a preterm baby's age to reflect their due date, not their birth date.</li>
+        <li>Typically used until about <strong>24 months</strong>.</li>
+      </ul>
+    </div>
+
+    <h2>What is corrected age?</h2>
+    <p>Corrected age (also called adjusted age) is a premature baby's chronological age minus the number of weeks they were born early. Because preterm infants miss part of the development that normally happens in the womb, comparing them to full-term babies of the same chronological age can be misleading. Corrected age gives a fairer picture of developmental milestones.</p>
+
+    <h2>The corrected age formula</h2>
+    <p>First find weeks early: <strong>40 ? gestational age at birth</strong>. Then subtract that many weeks from the chronological age. A baby born at 32 weeks was 8 weeks early, so an infant who is chronologically 6 months old has a corrected age of about 4 months. The calculator above does this automatically once you enter the gestational weeks.</p>
+
+    <h2>Until what age is corrected age used?</h2>
+    <p>Most pediatricians use corrected age until around 24 months, by which point the gap typically becomes negligible. Your child's care team may advise otherwise based on individual circumstances. For background, the U.S. <a href="https://www.cdc.gov/ncbddd/actearly/index.html" rel="nofollow noopener" target="_blank">CDC "Learn the Signs. Act Early." program</a> offers milestone guidance.</p>
+
+    <p>Need the standard figure instead? Use the main <a href="index.html">chronological age calculator</a>, or the <a href="age-in-months-calculator.html">age in months calculator</a> for screening tools that report months.</p>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details><summary>How do you calculate corrected age?</summary><p>Corrected age equals chronological age minus the weeks born early (40 minus gestational weeks). A baby born at 32 weeks is 8 weeks early, so subtract 8 weeks.</p></details>
+      <details><summary>Until what age is corrected age used?</summary><p>Usually until about 24 months, after which the difference is clinically negligible. Follow your pediatrician's guidance.</p></details>
+      <details><summary>Is corrected age the same as gestational age?</summary><p>No. Gestational age describes how far along the pregnancy was at birth. Corrected age adjusts the baby's current age after birth to account for prematurity.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div><a class="brand" href="index.html"><img src="assets/img/logo-mark.svg" width="30" height="30" alt=""> <span>Chrono<b>Age</b></span></a><p style="color:var(--muted);font-size:.92rem;margin-top:12px">A free, private chronological age calculator and learning hub.</p></div>
+    <div><h4>Calculators</h4><ul><li><a href="index.html">Chronological Age</a></li><li><a href="age-in-months-calculator.html">Age in Months</a></li><li><a href="corrected-age-calculator.html">Corrected Age</a></li><li><a href="how-old-am-i.html">How Old Am I</a></li><li><a href="pearson-chronological-age-calculator.html">Pearson Alternative</a></li></ul></div>
+    <div><h4>Learn</h4><ul><li><a href="how-to-calculate-chronological-age.html">How to Calculate</a></li><li><a href="biological-vs-chronological-age.html">Biological vs Chronological</a></li><li><a href="chronological-age-calculator-for-testing.html">For Speech Therapy &amp; Testing</a></li></ul></div>
+    <div><h4>Site</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>For educational purposes only; not medical advice. &copy; <span id="year">2026</span> ChronoAge. Last updated June 2026.</p></div>
+</div></footer>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>

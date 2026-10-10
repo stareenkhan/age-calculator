@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Free chronological age calculator  exact age in years, months and days">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b1220"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#g)" opacity="0.08"/>
+  <text x="80" y="250" font-family="Arial" font-size="64" font-weight="800" fill="#ffffff">Chronological Age</text>
+  <text x="80" y="330" font-family="Arial" font-size="64" font-weight="800" fill="#7c3aed">Calculator</text>
+  <text x="80" y="400" font-family="Arial" font-size="30" fill="#94a3b8">Free · Exact age in years, months &amp; days</text>
+  <g transform="translate(820,180)">
+    <rect width="300" height="270" rx="22" fill="#111a2e" stroke="#1e293b"/>
+    <rect x="0" y="0" width="300" height="56" rx="22" fill="url(#g)"/>
+    <rect x="0" y="34" width="300" height="22" fill="url(#g)"/>
+    <text x="150" y="36" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#fff">Age Result</text>
+    <text x="150" y="150" text-anchor="middle" font-family="Arial" font-size="40" font-weight="800" fill="#7c3aed">11y 6m</text>
+    <text x="150" y="195" text-anchor="middle" font-family="Arial" font-size="40" font-weight="800" fill="#7c3aed">21d</text>
+    <text x="150" y="235" text-anchor="middle" font-family="Arial" font-size="16" fill="#94a3b8">138 months · 4204 days</text>
+  </g>
+</svg>

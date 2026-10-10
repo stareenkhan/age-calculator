@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Biological age vs chronological age comparison of calendar age and physiological age">
+  <rect width="800" height="420" rx="20" fill="#f8fafc"/>
+  <text x="400" y="52" text-anchor="middle" font-family="Arial" font-size="22" font-weight="800" fill="#0f172a">Biological vs Chronological Age</text>
+  <g font-family="Arial">
+    <rect x="80" y="100" width="300" height="240" rx="16" fill="#fff" stroke="#e2e8f0"/>
+    <circle cx="230" cy="170" r="38" fill="#f5f3ff"/>
+    <g transform="translate(230,170)" fill="none" stroke="#6d28d9" stroke-width="3" stroke-linecap="round">
+      <rect x="-17" y="-14" width="34" height="30" rx="4"/>
+      <line x1="-17" y1="-4" x2="17" y2="-4"/>
+      <line x1="-8" y1="-21" x2="-8" y2="-10"/>
+      <line x1="8" y1="-21" x2="8" y2="-10"/>
+    </g>
+    <text x="230" y="250" text-anchor="middle" font-size="20" font-weight="800" fill="#6d28d9">Chronological</text>
+    <text x="230" y="280" text-anchor="middle" font-size="14" fill="#64748b">Calendar time since birth</text>
+    <text x="230" y="305" text-anchor="middle" font-size="14" fill="#64748b">Fixed &amp; exact</text>
+
+    <rect x="420" y="100" width="300" height="240" rx="16" fill="#fff" stroke="#e2e8f0"/>
+    <circle cx="570" cy="170" r="38" fill="#eef2ff"/>
+    <path transform="translate(570,171)" d="M0 15 C -20 -3 -15 -22 0 -9 C 15 -22 20 -3 0 15 Z" fill="#4f46e5"/>
+    <text x="570" y="250" text-anchor="middle" font-size="20" font-weight="800" fill="#4f46e5">Biological</text>
+    <text x="570" y="280" text-anchor="middle" font-size="14" fill="#64748b">Health of cells &amp; body</text>
+    <text x="570" y="305" text-anchor="middle" font-size="14" fill="#64748b">Varies with lifestyle</text>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Corrected age calculator for premature babies showing adjusted chronological age formula">
+  <rect width="800" height="420" rx="20" fill="#f8fafc"/>
+  <text x="400" y="52" text-anchor="middle" font-family="Arial" font-size="22" font-weight="800" fill="#0f172a">Corrected Age for Premature Babies</text>
+  <g font-family="Arial">
+    <text x="80" y="120" font-size="14" fill="#64748b">Full term</text>
+    <rect x="80" y="130" width="640" height="22" rx="11" fill="#e2e8f0"/>
+    <rect x="80" y="130" width="640" height="22" rx="11" fill="#ddd6fe"/>
+    <text x="730" y="147" font-size="13" fill="#64748b">40w</text>
+    <text x="80" y="190" font-size="14" fill="#64748b">Born preterm</text>
+    <rect x="80" y="200" width="640" height="22" rx="11" fill="#e2e8f0"/>
+    <rect x="80" y="200" width="512" height="22" rx="11" fill="#7c3aed"/>
+    <line x1="592" y1="190" x2="592" y2="232" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="600" y="247" font-size="12" fill="#dc2626">birth at 32w</text>
+  </g>
+  <rect x="140" y="280" width="520" height="80" rx="14" fill="#f5f3ff" stroke="#7c3aed"/>
+  <text x="400" y="315" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#6d28d9">Corrected Age = Chronological Age  (40  gestational weeks)</text>
+  <text x="400" y="342" text-anchor="middle" font-family="Arial" font-size="14" fill="#64748b">Example: 32 weeks born → subtract 8 weeks</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Age in months calculator converting chronological age from years to total months">
+  <rect width="800" height="420" rx="20" fill="#f8fafc"/>
+  <text x="400" y="56" text-anchor="middle" font-family="Arial" font-size="22" font-weight="800" fill="#0f172a">Years to Total Months</text>
+  <g font-family="Arial">
+    <rect x="120" y="110" width="240" height="180" rx="14" fill="#fff" stroke="#e2e8f0"/>
+    <text x="240" y="150" text-anchor="middle" font-size="16" fill="#64748b">Years &amp; Months</text>
+    <text x="240" y="210" text-anchor="middle" font-size="40" font-weight="800" fill="#0f172a">5y 7m</text>
+    <path d="M380 200 H440" stroke="#7c3aed" stroke-width="5" stroke-linecap="round"/>
+    <path d="M432 188 L452 200 L432 212 Z" fill="#7c3aed"/>
+    <text x="416" y="180" text-anchor="middle" font-size="13" fill="#64748b">×12 + 7</text>
+    <rect x="470" y="110" width="240" height="180" rx="14" fill="#f5f3ff" stroke="#7c3aed"/>
+    <text x="590" y="150" text-anchor="middle" font-size="16" fill="#6d28d9">Total Months</text>
+    <text x="590" y="210" text-anchor="middle" font-size="46" font-weight="800" fill="#6d28d9">67</text>
+  </g>
+  <text x="400" y="350" text-anchor="middle" font-family="Arial" font-size="15" fill="#64748b">Standardized tests record age as "years;months" (e.g. 5;7).</text>
+</svg>

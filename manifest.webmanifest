@@ -1,0 +1,12 @@
+{
+  "name": "Chronological Age Calculator",
+  "short_name": "ChronoAge",
+  "description": "Free chronological age calculator � exact age in years, months, and days from a date of birth and test date.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "assets/img/logo-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

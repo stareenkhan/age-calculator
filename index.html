@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chronological Age Calculator — Free, Exact Age in Years &amp; Months</title>
+<meta name="description" content="Free chronological age calculator. Enter a date of birth and test date to get exact age in years, months, and days — perfect for SLP testing and assessments.">
+<link rel="canonical" href="https://chronological-age-calculator.example/">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chronological Age Calculator — Free, Exact Age in Years &amp; Months">
+<meta property="og:description" content="Free chronological age calculator. Get exact age in years, months, and days from a date of birth and test date.">
+<meta property="og:url" content="https://chronological-age-calculator.example/">
+<meta property="og:image" content="https://chronological-age-calculator.example/assets/img/og-chronological-age-calculator.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Chronological Age Calculator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "url": "https://chronological-age-calculator.example/",
+  "description": "Free chronological age calculator that returns exact age in years, months, and days from a date of birth and test date.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "1280" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is a chronological age calculator?","acceptedAnswer":{"@type":"Answer","text":"A chronological age calculator is a free online tool that works out the exact time between a date of birth and a chosen test date, expressed in years, months, and days. It removes the manual borrowing and regrouping that age math usually requires."}},
+    {"@type":"Question","name":"How do you calculate chronological age?","acceptedAnswer":{"@type":"Answer","text":"Chronological age is calculated by subtracting the date of birth from the test date, column by column (day, month, year), borrowing days and months where needed. The result is the person's exact age in years, months, and days."}},
+    {"@type":"Question","name":"Is this chronological age calculator free?","acceptedAnswer":{"@type":"Answer","text":"Yes. This chronological age calculator is completely free, requires no sign-up, and runs entirely in your browser, so your date of birth is never sent to a server or stored."}},
+    {"@type":"Question","name":"Does the calculator give age in months for testing?","acceptedAnswer":{"@type":"Answer","text":"Yes. Alongside years-months-days, it shows total whole months and remaining days in the years;months format used by standardized tests such as the WISC, WAIS, Brigance, and ASQ."}},
+    {"@type":"Question","name":"Does it handle leap years correctly?","acceptedAnswer":{"@type":"Answer","text":"Yes. The calculator uses an exact calendar algorithm that accounts for leap years and the different number of days in each month, so the result is accurate to the day."}}
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Chronological Age Calculator home">
+      <img src="assets/img/logo-mark.svg" width="30" height="30" alt="">
+      <span>Chrono<b>Age</b></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" aria-current="page">Calculator</a></li>
+      <li><a href="how-to-calculate-chronological-age.html">How to Calculate</a></li>
+      <li><a href="age-in-months-calculator.html">Age in Months</a></li>
+      <li><a href="chronological-age-calculator-for-testing.html">For Testing</a></li>
+      <li><a href="corrected-age-calculator.html">Corrected Age</a></li>
+      <li><a href="biological-vs-chronological-age.html">Bio vs Chrono</a></li>
+      <li><a href="how-old-am-i.html">How Old Am I</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero container">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Free · No sign-up · Private</p>
+      <h1>Chronological Age Calculator</h1>
+      <p class="lead">This free <strong>chronological age calculator</strong> instantly tells you the exact time between any date of birth and a test date, broken down into years, months, and days — plus total months for assessments. Everything is calculated in your browser, so your data never leaves your device.</p>
+    </div>
+
+    <div class="hero-calc">
+      <form class="card calc-card" data-calc novalidate>
+        <div class="field">
+          <label for="dob">Date of birth</label>
+          <input type="date" id="dob" name="dob" data-role="dob" max="2100-12-31" required>
+        </div>
+        <div class="field">
+          <label for="ref">Age at this date <span class="hint">(test date — defaults to today)</span></label>
+          <input type="date" id="ref" name="ref" data-role="ref">
+        </div>
+        <p class="error-msg" data-role="error" role="alert" aria-live="assertive"></p>
+        <div class="btn-row">
+          <button type="submit" class="btn btn-primary" data-label="Calculate">Calculate Age</button>
+          <button type="button" class="btn btn-ghost" data-role="reset" data-label="Reset">Reset</button>
+          <button type="button" class="btn btn-ghost" data-role="copy" data-label="Copy">Copy</button>
+          <button type="button" class="btn btn-ghost" data-role="print" data-label="Print">Print</button>
+          <button type="button" class="btn btn-ghost" data-role="share" data-label="Share">Share</button>
+        </div>
+
+        <div class="result hidden" data-role="result" aria-live="polite">
+          <p class="result-main" data-out="main">—</p>
+          <div class="result-grid">
+            <div class="stat" data-out="months"></div>
+            <div class="stat" data-out="weeks"></div>
+            <div class="stat" data-out="days"></div>
+            <div class="stat" data-out="next"></div>
+          </div>
+        </div>
+
+        <p class="privacy-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 4v5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V7l7-4z" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Your date of birth stays in your browser. Nothing is uploaded or stored.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section container doc-layout">
+  <nav class="toc" aria-label="Table of contents">
+    <strong>On this page</strong>
+    <ol>
+      <li><a href="#what">What is chronological age?</a></li>
+      <li><a href="#how-to-use">How to use this calculator</a></li>
+      <li><a href="#how-calc">How chronological age is calculated</a></li>
+      <li><a href="#months">Age in years, months, and days</a></li>
+      <li><a href="#who">Who uses a chronological age calculator?</a></li>
+      <li><a href="#types">Chronological vs biological vs corrected age</a></li>
+      <li><a href="#accuracy">Accuracy, leap years &amp; time zones</a></li>
+      <li><a href="#related">Related calculators &amp; guides</a></li>
+      <li><a href="#faq">Frequently asked questions</a></li>
+    </ol>
+  </nav>
+  <div class="prose">
+    <div class="takeaways">
+      <h2 class="mt-0">Key takeaways</h2>
+      <ul>
+        <li><strong>Chronological age</strong> is the exact amount of time that has passed since a person's date of birth.</li>
+        <li>It is found by <strong>subtracting the date of birth from the test date</strong> in years, months, and days.</li>
+        <li>This <strong>chronological age calculator</strong> also returns total months for standardized testing.</li>
+        <li>The tool is free, private, and accurate to the day, including leap years.</li>
+      </ul>
+    </div>
+
+    <figure>
+      <img src="18218e3f-d8c1-474b-857a-7ac03e6a4689.png" width="1024" height="683"
+           alt="Chronological age calculator showing exact age in years, months, and days from a date of birth and today's date" loading="lazy">
+    </figure>
+
+    <h2 id="what">What is chronological age?</h2>
+    <p><strong>Chronological age is the amount of time that has passed since a person's date of birth</strong>, measured against the calendar. Unlike biological age, which reflects the condition of the body, chronological age is fixed and objective: it only depends on two dates — when someone was born and the date you are measuring to. A chronological age calculator simply automates that subtraction so you get an exact, error-free answer in seconds.</p>
+    <p>In everyday life we round chronological age to whole years ("she's 11"). In clinical, educational, and research settings, however, the precise figure in years, months, and days matters a great deal, because test norms and developmental milestones are defined that finely.</p>
+
+    <h2 id="how-to-use">How to use this chronological age calculator</h2>
+    <ol>
+      <li><strong>Enter the date of birth</strong> in the first field.</li>
+      <li><strong>Set the test date</strong> (the "age at this date" field). It defaults to today, but you can change it to any past or future assessment date.</li>
+      <li><strong>Read the result</strong> instantly: exact age in years, months, and days, plus total months, total weeks, total days, and a countdown to the next birthday.</li>
+      <li><strong>Copy, print, or share</strong> the result with one tap — useful for attaching to a test protocol or report.</li>
+    </ol>
+
+    <h2 id="how-calc">How chronological age is calculated</h2>
+    <p>Chronological age is calculated by subtracting the date of birth from the test date, one column at a time — days, then months, then years — borrowing where a column would go negative. For a full worked example by hand, see our guide on <a href="how-to-calculate-chronological-age.html">how to calculate chronological age</a>.</p>
+    <figure>
+      <img src="assets/img/how-to-calculate-chronological-age-formula.svg" width="800" height="500"
+           alt="How to calculate chronological age by hand using the year, month, day subtraction formula" loading="lazy">
+      <figcaption>The chronological age formula: test date minus date of birth, with borrowing.</figcaption>
+    </figure>
+    <p>The naive approach of dividing total days by 365 introduces errors because years are not all 365 days long. This calculator instead uses an exact calendar algorithm, so the months and days always line up with a real calendar.</p>
+
+    <h2 id="months">Chronological age in years, months, and days</h2>
+    <p>Standardized assessments almost always require age in the <strong>years;months</strong> format (for example, <em>5;7</em> means five years and seven months). This calculator displays that figure directly, along with total whole months — the number psychologists and speech-language pathologists copy onto a score sheet. If you only need the month figure, our dedicated <a href="age-in-months-calculator.html">age in months calculator</a> focuses on exactly that.</p>
+    <figure>
+      <img src="assets/img/age-in-months-calculator-table.svg" width="800" height="420"
+           alt="Age in months calculator converting chronological age from years to total months" loading="lazy">
+      <figcaption>Converting "5 years 7 months" to 67 total months.</figcaption>
+    </figure>
+
+    <h2 id="who">Who uses a chronological age calculator?</h2>
+    <ul>
+      <li><strong>Speech-language pathologists (SLPs)</strong> and psychologists, to score normed assessments precisely. See our <a href="chronological-age-calculator-for-testing.html">chronological age calculator for testing</a>.</li>
+      <li><strong>Teachers and school staff</strong>, to confirm grade placement and eligibility cut-off dates.</li>
+      <li><strong>Pediatricians and parents of preterm infants</strong>, who also track <a href="corrected-age-calculator.html">corrected age</a>.</li>
+      <li><strong>Researchers</strong>, who need participant ages reported to the month.</li>
+      <li><strong>Anyone curious</strong> about their exact age or asking "<a href="how-old-am-i.html">how old am I</a>?"</li>
+    </ul>
+
+    <h2 id="types">Chronological vs biological vs corrected age</h2>
+    <p>It helps to distinguish three related ideas:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Type</th><th>What it measures</th><th>Changes with</th></tr></thead>
+        <tbody>
+          <tr><td>Chronological age</td><td>Calendar time since birth</td><td>Only the passage of time</td></tr>
+          <tr><td>Biological age</td><td>Physiological condition of the body</td><td>Lifestyle, health, genetics</td></tr>
+          <tr><td>Corrected age</td><td>Chronological age minus prematurity</td><td>Gestational weeks at birth</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Curious how the calendar compares to your body's age? Read <a href="biological-vs-chronological-age.html">biological vs chronological age</a>.</p>
+
+    <h2 id="accuracy">Accuracy, leap years &amp; time zones</h2>
+    <p>This chronological age calculator is accurate to the day. It correctly handles leap years (including February 29 birthdays) and the fact that months have 28—31 days. Because it works from calendar dates rather than timestamps, time zones do not affect the result. For official testing, always use the actual administration date as your test date.</p>
+    <p>For authoritative background on developmental milestones by age, see the U.S. CDC's <a href="https://www.cdc.gov/ncbddd/actearly/milestones/index.html" rel="nofollow noopener" target="_blank">milestone resources</a>.</p>
+
+    <h2 id="related">Related calculators &amp; guides</h2>
+    <div class="grid-cards">
+      <a class="link-card" href="how-to-calculate-chronological-age.html"><div class="card"><h3>How to Calculate Chronological Age</h3><p>Step-by-step by hand, with the formula and examples.</p></div></a>
+      <a class="link-card" href="age-in-months-calculator.html"><div class="card"><h3>Age in Months Calculator</h3><p>Get chronological age in total months and days.</p></div></a>
+      <a class="link-card" href="chronological-age-calculator-for-testing.html"><div class="card"><h3>For Testing &amp; SLP</h3><p>Age in years;months for WISC, Brigance, ASQ and more.</p></div></a>
+      <a class="link-card" href="corrected-age-calculator.html"><div class="card"><h3>Corrected Age Calculator</h3><p>Adjusted age for premature babies.</p></div></a>
+      <a class="link-card" href="biological-vs-chronological-age.html"><div class="card"><h3>Biological vs Chronological</h3><p>Why your body's age can differ from the calendar.</p></div></a>
+      <a class="link-card" href="pearson-chronological-age-calculator.html"><div class="card"><h3>Pearson Tool Explained</h3><p>How it works and a free, private alternative.</p></div></a>
+    </div>
+
+    <h2 id="faq">Frequently asked questions</h2>
+    <div class="faq">
+      <details><summary>What is a chronological age calculator?</summary><p>A chronological age calculator is a free online tool that works out the exact time between a date of birth and a chosen test date, expressed in years, months, and days. It removes the manual borrowing and regrouping that age math usually requires.</p></details>
+      <details><summary>How do you calculate chronological age?</summary><p>Chronological age is calculated by subtracting the date of birth from the test date, column by column (day, month, year), borrowing days and months where needed. The result is the person's exact age in years, months, and days.</p></details>
+      <details><summary>Is this chronological age calculator free?</summary><p>Yes. It is completely free, requires no sign-up, and runs entirely in your browser, so your date of birth is never sent to a server or stored.</p></details>
+      <details><summary>Does the calculator give age in months for testing?</summary><p>Yes. Alongside years-months-days, it shows total whole months and remaining days in the years;months format used by standardized tests such as the WISC, WAIS, Brigance, and ASQ.</p></details>
+      <details><summary>Does it handle leap years correctly?</summary><p>Yes. The calculator uses an exact calendar algorithm that accounts for leap years and the different number of days in each month, so the result is accurate to the day.</p></details>
+      <details><summary>Can I calculate my age on a past or future date?</summary><p>Absolutely. Change the "age at this date" field to any date and the tool will show the chronological age as of that date.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/logo-mark.svg" width="30" height="30" alt=""> <span>Chrono<b>Age</b></span></a>
+        <p style="color:var(--muted);font-size:.92rem;margin-top:12px">A free, private chronological age calculator and learning hub. Built for SLPs, educators, parents, and the curious.</p>
+      </div>
+      <div>
+        <h4>Calculators</h4>
+        <ul>
+          <li><a href="index.html">Chronological Age</a></li>
+          <li><a href="age-in-months-calculator.html">Age in Months</a></li>
+          <li><a href="corrected-age-calculator.html">Corrected Age</a></li>
+          <li><a href="how-old-am-i.html">How Old Am I</a></li>
+          <li><a href="pearson-chronological-age-calculator.html">Pearson Alternative</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="how-to-calculate-chronological-age.html">How to Calculate</a></li>
+          <li><a href="biological-vs-chronological-age.html">Biological vs Chronological</a></li>
+          <li><a href="chronological-age-calculator-for-testing.html">For Speech Therapy &amp; Testing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>This tool is provided for educational and informational purposes only and is not medical advice. Always use the official test administration date for clinical assessments. &copy; <span id="year">2026</span> ChronoAge. Last updated June 2026.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>

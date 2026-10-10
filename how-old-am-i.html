@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Old Am I? Free Age Calculator (Years, Months &amp; Days)</title>
+<meta name="description" content="How old am I? Enter your date of birth to find your exact age in years, months, and days, total days lived, and a countdown to your next birthday. Free and private.">
+<link rel="canonical" href="https://chronological-age-calculator.example/how-old-am-i.html">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Old Am I? Free Age Calculator">
+<meta property="og:description" content="Find your exact age in years, months, days, and total days lived.">
+<meta property="og:image" content="https://chronological-age-calculator.example/assets/img/og-chronological-age-calculator.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Home","item":"https://chronological-age-calculator.example/"},
+{"@type":"ListItem","position":2,"name":"How Old Am I","item":"https://chronological-age-calculator.example/how-old-am-i.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How old am I if I was born in 2007?","acceptedAnswer":{"@type":"Answer","text":"Enter your 2007 date of birth in the calculator and it will show your exact current age in years, months, and days. Your age depends on the exact day and month, not just the year."}},
+{"@type":"Question","name":"How do I find out how many days old I am?","acceptedAnswer":{"@type":"Answer","text":"The calculator shows your total days lived alongside your age in years, months, and days. It counts every calendar day, including leap days, since your birth."}}]}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Chronological Age Calculator home"><img src="assets/img/logo-mark.svg" width="30" height="30" alt=""><span>Chrono<b>Age</b></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Calculator</a></li>
+      <li><a href="how-to-calculate-chronological-age.html">How to Calculate</a></li>
+      <li><a href="age-in-months-calculator.html">Age in Months</a></li>
+      <li><a href="chronological-age-calculator-for-testing.html">For Testing</a></li>
+      <li><a href="corrected-age-calculator.html">Corrected Age</a></li>
+      <li><a href="biological-vs-chronological-age.html">Bio vs Chrono</a></li>
+      <li><a href="how-old-am-i.html" aria-current="page">How Old Am I</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+<div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> › How Old Am I</nav></div>
+
+<section class="hero container">
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow">Free · Instant · Private</p>
+      <h1>How Old Am I?</h1>
+      <p class="lead">Wondering <strong>how old am I</strong> right now? Enter your date of birth to see your exact age in years, months, and days, how many days you have lived, and a countdown to your next birthday.</p>
+      <form class="card calc-card" data-calc novalidate>
+        <div class="field"><label for="dob">Your date of birth</label><input type="date" id="dob" data-role="dob" required></div>
+        <div class="field"><label for="ref">As of this date <span class="hint">(defaults to today)</span></label><input type="date" id="ref" data-role="ref"></div>
+        <p class="error-msg" data-role="error" role="alert" aria-live="assertive"></p>
+        <div class="btn-row">
+          <button type="submit" class="btn btn-primary" data-label="Calculate">How old am I?</button>
+          <button type="button" class="btn btn-ghost" data-role="reset" data-label="Reset">Reset</button>
+          <button type="button" class="btn btn-ghost" data-role="share" data-label="Share">Share</button>
+        </div>
+        <div class="result hidden" data-role="result" aria-live="polite">
+          <p class="result-main" data-out="main">—</p>
+          <div class="result-grid">
+            <div class="stat" data-out="months"></div>
+            <div class="stat" data-out="weeks"></div>
+            <div class="stat" data-out="days"></div>
+            <div class="stat" data-out="next"></div>
+          </div>
+        </div>
+        <p class="privacy-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 4v5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V7l7-4z" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg> Your birth date never leaves your browser.</p>
+      </form>
+    </div>
+    <div><img class="hero-art" src="assets/img/chronological-age-calculator-hero.svg" width="800" height="450" alt="How old am I calculator showing age in years, months and days" loading="eager"></div>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="prose">
+    <div class="takeaways">
+      <h2 class="mt-0">Key takeaways</h2>
+      <ul>
+        <li>"<strong>How old am I</strong>" is answered by your chronological age — calendar time since birth.</li>
+        <li>Your exact age depends on the day and month, not just the birth year.</li>
+        <li>This tool also shows total days lived and your next-birthday countdown.</li>
+      </ul>
+    </div>
+
+    <h2>How the "how old am I" calculation works</h2>
+    <p>Your age is the difference between today's date and your date of birth. The calculator subtracts the two dates precisely — years, then months, then days — so the answer is accurate even across leap years. If you want to know your age on a specific past or future day, change the "as of this date" field.</p>
+
+    <h2>"If I was born in… how old am I?"</h2>
+    <p>A common question is something like "how old is someone born in 2007?" The answer changes depending on whether the birthday has already happened this year, which is why entering the full date of birth gives the only exact result. The same logic answers "what year was I born?" in reverse — subtract your age from the current year, adjusting for whether your birthday has passed.</p>
+
+    <h2>Related tools</h2>
+    <div class="grid-cards">
+      <a class="link-card" href="index.html"><div class="card"><h3>Chronological Age Calculator</h3><p>The full tool with test-date support.</p></div></a>
+      <a class="link-card" href="age-in-months-calculator.html"><div class="card"><h3>Age in Months</h3><p>See your age as total months.</p></div></a>
+      <a class="link-card" href="how-to-calculate-chronological-age.html"><div class="card"><h3>How to Calculate by Hand</h3><p>The formula behind the answer.</p></div></a>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details><summary>How old am I if I was born in 2007?</summary><p>Enter your 2007 date of birth above and the calculator shows your exact current age. It depends on the exact day and month, not just the year.</p></details>
+      <details><summary>How do I find out how many days old I am?</summary><p>The result includes your total days lived alongside years, months, and days. It counts every calendar day, including leap days.</p></details>
+      <details><summary>Can I check my age on a future date?</summary><p>Yes — set the "as of this date" field to any future date to see how old you will be then.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div><a class="brand" href="index.html"><img src="assets/img/logo-mark.svg" width="30" height="30" alt=""> <span>Chrono<b>Age</b></span></a><p style="color:var(--muted);font-size:.92rem;margin-top:12px">A free, private chronological age calculator and learning hub.</p></div>
+    <div><h4>Calculators</h4><ul><li><a href="index.html">Chronological Age</a></li><li><a href="age-in-months-calculator.html">Age in Months</a></li><li><a href="corrected-age-calculator.html">Corrected Age</a></li><li><a href="how-old-am-i.html">How Old Am I</a></li><li><a href="pearson-chronological-age-calculator.html">Pearson Alternative</a></li></ul></div>
+    <div><h4>Learn</h4><ul><li><a href="how-to-calculate-chronological-age.html">How to Calculate</a></li><li><a href="biological-vs-chronological-age.html">Biological vs Chronological</a></li><li><a href="chronological-age-calculator-for-testing.html">For Speech Therapy &amp; Testing</a></li></ul></div>
+    <div><h4>Site</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>For educational purposes only; not medical advice. &copy; <span id="year">2026</span> ChronoAge. Last updated June 2026.</p></div>
+</div></footer>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
